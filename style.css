@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: url("/assets/banner.jpg") no-repeat center center/cover;
+  color: white;
+  height: 100vh; /* full screen */
+  display: flex;
+  justify-content: flex-end; /* text on right */
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero-content {
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.6); /* subtle overlay for readability */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  top: -40px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f9f9f9;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.btn-group {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+/* Second button style (Leaderboard) */
+.btn.secondary {
+  background: linear-gradient(135deg, #f59e0b, #b45309); /* elegant orange */
+  box-shadow: 0 6px 15px rgba(245, 158, 11, 0.3);
+}
+
+.btn.secondary:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center; /* center text on mobile */
+    padding: 0 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}

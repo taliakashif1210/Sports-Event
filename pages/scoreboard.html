@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Scoreboard</title>
+  <link rel="stylesheet" href="scoreboard.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="scoreboard-container">
+    <h1>Live Scoreboard</h1>
+
+    <table class="scoreboard">
+      <thead>
+        <tr>
+          <th>Match</th>
+          <th>Team</th>
+          <th>Score</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="scoreData">
+        <!-- Cricket -->
+        <tr>
+          <td>Cricket Final</td>
+          <td>Team A vs Team B</td>
+          <td>145/7 vs 132/10</td>
+          <td class="running">Running</td>
+        </tr>
+        <tr>
+          <td>Cricket Semi-Final</td>
+          <td>Team C vs Team D</td>
+          <td>210/8 vs 198/10</td>
+          <td class="finished">Finished</td>
+        </tr>
+
+        <!-- Football -->
+        <tr>
+          <td>Football Final</td>
+          <td>Team A vs Team B</td>
+          <td>2 - 1</td>
+          <td class="finished">Finished</td>
+        </tr>
+        <tr>
+          <td>League Match</td>
+          <td>Team C vs Team D</td>
+          <td>1 - 0</td>
+          <td class="running">Running</td>
+        </tr>
+
+        <!-- Volleyball -->
+        <tr>
+          <td>Volleyball Semi-Final</td>
+          <td>Team A vs Team B</td>
+          <td>3 - 2</td>
+          <td class="running">Running</td>
+        </tr>
+
+        <!-- Basketball -->
+        <tr>
+          <td>Basketball Final</td>
+          <td>Team A vs Team B</td>
+          <td>78 - 82</td>
+          <td class="finished">Finished</td>
+        </tr>
+
+        <!-- Badminton -->
+        <tr>
+          <td>Badminton Singles</td>
+          <td>Player A vs Player B</td>
+          <td>21-18, 19-21, 21-17</td>
+          <td class="running">Running</td>
+        </tr>
+
+        <!-- Table Tennis -->
+        <tr>
+          <td>Table Tennis Final</td>
+          <td>Player A vs Player B</td>
+          <td>3 - 2</td>
+          <td class="finished">Finished</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="/js/loadComponents.js"></script>
+</body>
+</html>

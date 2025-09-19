@@ -1,0 +1,79 @@
+/* General */
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.leaderboard-container {
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.leaderboard-container h1 {
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+#searchBar {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 18px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#searchBar:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+/* Cards Layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Sport-specific subtle elegant colors */
+.cricket { background-color: #facc15; color: #2e2e2e; }     /* Soft Yellow */
+.football { background-color: #34d399; color: #2e2e2e; }       /* Soft Green */
+.volleyball { background-color: #fb923c; color: #2e2e2e; }     /* Soft Orange */
+.basketball { background-color: #f87171; color: #2e2e2e; }     /* Soft Red */
+.badminton { background-color: #60a5fa; color: #2e2e2e; }      /* Soft Blue */
+.tabletennis { background-color: #a78bfa; color: #2e2e2e; }    /* Soft Purple */
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}

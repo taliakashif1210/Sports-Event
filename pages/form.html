@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Event - Form</title>
+  <link rel="stylesheet" href="/pages/form.css"> 
+</head>
+<body>
+  <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+  <main class="registration-container">
+    <h1>Event Registration</h1>
+    <form id="registrationForm">
+
+      <!-- Row 1: Name + Roll No -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="rollno">Roll No</label>
+          <input type="text" id="rollno" placeholder="Enter Roll No" required>
+        </div>
+      </div>
+
+      <!-- Row 2: Year + Contact -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="year">Year</label>
+          <select id="year" required>
+            <option value="">Select Year</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact</label>
+          <input type="tel" id="contact" placeholder="Enter Contact No" required>
+        </div>
+      </div>
+
+      <!-- Row 3: Event -->
+      <div class="form-group">
+        <label for="event">Select Event</label>
+        <select id="event" required>
+          <option value="">Choose an Event</option>
+          <option value="cricket">Cricket</option>
+          <option value="football">Football</option>
+          <option value="volleyball">Volleyball</option>
+          <option value="basketball">Basketball</option>
+          <option value="basketball">Badminton</option>
+          <option value="basketball">Table Tennis</option>
+        </select>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Registration Successful!");
+      this.reset();
+    });
+  </script>
+
+    <!-- Load Components -->
+    <script src="/js/loadComponents.js"></script>
+</body>
+</html>

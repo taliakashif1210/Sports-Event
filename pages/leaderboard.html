@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="leaderboard-container">
+    <h1>Leaderboard</h1>
+
+    <!-- Search Bar -->
+    <input 
+      type="text" 
+      id="searchBar" 
+      placeholder="Search sport or team..." 
+      onkeyup="filterLeaderboard()"
+    >
+
+    <!-- Cards Section -->
+    <div class="cards" id="leaderboardCards">
+      <!-- Cricket -->
+      <div class="card cricket">
+        <h2>Cricket</h2>
+        <ul>
+          <li>Team A – Wins: 5</li>
+          <li>Team B – Wins: 3</li>
+          <li>Team C – Wins: 2</li>
+        </ul>
+      </div>
+
+      <!-- Football -->
+      <div class="card football">
+        <h2>Football</h2>
+        <ul>
+          <li>Team A – Wins: 4</li>
+          <li>Team B – Wins: 2</li>
+          <li>Team C – Wins: 1</li>
+        </ul>
+      </div>
+
+      <!-- Volleyball -->
+      <div class="card volleyball">
+        <h2>Volleyball</h2>
+        <ul>
+          <li>Team A – Wins: 6</li>
+          <li>Team B – Wins: 3</li>
+        </ul>
+      </div>
+
+      <!-- Basketball -->
+      <div class="card basketball">
+        <h2>Basketball</h2>
+        <ul>
+          <li>Team A – Wins: 7</li>
+          <li>Team B – Wins: 5</li>
+        </ul>
+      </div>
+
+      <!-- Badminton -->
+      <div class="card badminton">
+        <h2>Badminton</h2>
+        <ul>
+          <li>Player A – Wins: 8</li>
+          <li>Player B – Wins: 4</li>
+        </ul>
+      </div>
+
+      <!-- Table Tennis -->
+      <div class="card tabletennis">
+        <h2>Table Tennis</h2>
+        <ul>
+          <li>Player A – Wins: 3</li>
+          <li>Player B – Wins: 2</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/leaderboard.js"></script>
+  <script src="/js/loadComponents.js"></script>
+</body>
+</html>
