@@ -1,2 +1,2 @@
-# Sports-Events
-Sprts Event registrations , scoreboard and leaderboard UI
+# Sports-Event
+Sports Event registration, scoreboard and leaderboard UI
